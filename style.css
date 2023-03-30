@@ -1,0 +1,75 @@
+body {
+  background-color: #f3f5fb;
+  font-family: "Roboto", sans-serif;
+}
+.active {
+  border-bottom: 4px solid #000 !important;
+  font-weight: 700;
+}
+.my-bg {
+  background-color: #e3e6ee;
+}
+.my-btn {
+  all: unset;
+}
+.practice {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+}
+.my-maxWidth {
+  max-width: 270px;
+}
+#my-noWrap {
+  flex-wrap: nowrap !important;
+}
+.resize {
+  resize: both;
+}
+
+/* --------------------- */
+/* -----Card------------ */
+/* --------------------- */
+.cards{
+  display: flex;
+  gap: 0px 30px;
+  justify-content: center;
+  overflow-x: auto;
+}
+.card{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0px 20px;
+  background-color: white;
+  max-width: 250px;
+  padding: 5px;
+  flex-shrink:0;
+}
+.card__image{
+  width:30%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+.card__description{
+  font-size: 0.8rem;
+}
+.card__title{
+  font-weight:700;
+  font-size: 1rem;
+}
+.card__tag{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+@media only screen and (max-width: 1024px){
+  .cards{
+    justify-content: start;
+  }
+}
+.cards::-webkit-scrollbar {
+  display: none;
+}
