@@ -65,6 +65,49 @@ body {
   border-radius: 5px;
   padding: 5px;
 }
+
+/* --------------------- */
+/* -----NFT cards------------ */
+/* --------------------- */
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  gap:2rem;
+  padding:30px 40px ;
+  flex-wrap: wrap;
+}
+.NFTcard{
+  background-color: white;
+  min-width: 150px;
+  max-width: 350px;
+  border-radius: 10px;
+  transition:transform 0.3s ease-out;
+}
+.NFTcard:hover{
+  transform:translateY(-8px)
+}
+.NFTcard img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  aspect-ratio:16/9;
+}
+.NFTcard__description{
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+#NFTcard__heading{
+  font-weight: bold;
+}
+.NFTcard__description p{
+  border: 1px solid grey;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  padding: 2px 4px;
+}
+
+
 @media only screen and (max-width: 1024px){
   .cards{
     justify-content: start;
